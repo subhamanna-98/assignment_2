@@ -1,0 +1,194 @@
+{
+  "info": {
+    "_postman_id": "d0847140-f05a-482c-87aa-ec00aec13d81",
+    "name": "EMAIL-OTP-APP",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53357715",
+    "_collection_link": "https://go.postman.co/collection/53357715-d0847140-f05a-482c-87aa-ec00aec13d81?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost:3000/api/register",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\":\"Rahim\",\r\n  \"email\":\"manna129@yopmail.com\",\r\n  \"phone\":\"9876543210\",\r\n  \"password\":\"123456\",\r\n  \"role\":\"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/api/verify",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n     \"email\":\"manna129@yopmail.com\",\r\n     \"otp\":\"6131\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/verify",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "verify"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/api/login",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n     \"email\":\"manna129@yopmail.com\",\r\n     \"password\":\"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/api/user-dashboard",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGJlMjU3NzljNDM3ZWZhZDFmODc0NiIsIm5hbWUiOiJSYWhpbSIsImVtYWlsIjoibWFubmExMkB5b3BtYWlsLmNvbSIsInBob25lIjoiOTg3NjU0MzIxMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc5MTYzNzg3LCJleHAiOjE3NzkyNTAxODd9.5JZWz-o0zYqMqzPSHM95-1r_mnVkrAHcT-m8qGAwgzY",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/user-dashboard",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "user-dashboard"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/api/profile",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGJlMjU3NzljNDM3ZWZhZDFmODc0NiIsIm5hbWUiOiJSYWhpbSIsImVtYWlsIjoibWFubmExMkB5b3BtYWlsLmNvbSIsInBob25lIjoiOTg3NjU0MzIxMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc5MTYzNzg3LCJleHAiOjE3NzkyNTAxODd9.5JZWz-o0zYqMqzPSHM95-1r_mnVkrAHcT-m8qGAwgzY",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/profile",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "profile"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/api/admin-dashboard",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGJlNDkxNzljNDM3ZWZhZDFmODc0OCIsIm5hbWUiOiJSYWhpbSIsImVtYWlsIjoibWFubmExMjlAeW9wbWFpbC5jb20iLCJwaG9uZSI6Ijk4NzY1NDMyMTAiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NzkxNjQzNDgsImV4cCI6MTc3OTI1MDc0OH0.VRGc4IPqp329hW_dfjYqG_izOAHCIgzFZG5UoPnMoFM",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/admin-dashboard",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "admin-dashboard"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
