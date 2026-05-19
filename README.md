@@ -1,0 +1,1 @@
+This is a Role-Based Authentication System built with Express.js and MongoDB. It includes secure user registration with email OTP verification, login with JWT authentication, and protected routes based on user roles (user/admin). Passwords are securely hashed using bcrypt. The system follows MVC architecture for better scalability and maintainability.
