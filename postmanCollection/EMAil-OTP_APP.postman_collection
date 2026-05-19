@@ -1,0 +1,162 @@
+{
+  "info": {
+    "_postman_id": "40c3d4d3-22ae-44de-a1e6-d8b231cdc933",
+    "name": "CRUD-API-APP",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53357715",
+    "_collection_link": "https://go.postman.co/collection/53357715-40c3d4d3-22ae-44de-a1e6-d8b231cdc933?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost:5000/api/create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"vivo 15\",\r\n  \"description\": \"Apple Mobile\",\r\n  \"price\": 19000,\r\n  \"category\": \"Mobile\",\r\n  \"inStock\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/create",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/getById/6a0739d01efba8ec6593160f",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/getById/6a0739d01efba8ec6593160f",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "getById",
+            "6a0739d01efba8ec6593160f"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/update/6a0739d01efba8ec6593160f",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Redme S24\",\r\n  \"price\": 1500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/update/6a0739d01efba8ec6593160f",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "update",
+            "6a0739d01efba8ec6593160f"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/soft-delete/6a0739d01efba8ec6593160f",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/soft-delete/6a0739d01efba8ec6593160f",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "soft-delete",
+            "6a0739d01efba8ec6593160f"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/hard-delete/6a0735c415ea5ffa83443d70",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/hard-delete/6a0735c415ea5ffa83443d70",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "hard-delete",
+            "6a0735c415ea5ffa83443d70"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/get",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/get",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "get"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
